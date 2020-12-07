@@ -39,9 +39,6 @@ Style/NumericPredicate:
 Style/CommentedKeyword:
   Enabled: false
 
-Style/NilComparison:
-  EnforcedStyle: comparison
-
 Metrics/ClassLength:
   Enabled: false
 
