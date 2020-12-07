@@ -1,0 +1,79 @@
+AllCops:
+  DisplayCopNames: true
+  TargetRubyVersion: 2.7
+  NewCops: enable
+
+# For sure
+
+Layout/LineLength:
+  Max: 120
+
+Style/ModuleFunction:
+  EnforcedStyle: extend_self
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+
+Style/Documentation:
+  Enabled: false
+
+Gemspec/RequiredRubyVersion:
+  Enabled: false
+
+Layout/MultilineBlockLayout:
+  Enabled: false
+Layout/BlockEndNewline:
+  Enabled: false
+
+Style/NilComparison:
+  EnforcedStyle: comparison
+Style/NumericPredicate:
+  EnforcedStyle: comparison
+
+Style/CommentedKeyword:
+  Enabled: false
+
+Style/NilComparison:
+  EnforcedStyle: comparison
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  CountAsOne:
+    - hash
+    - array
+    - heredoc
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Style/EmptyCaseCondition:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+Style/Alias:
+  EnforcedStyle: prefer_alias_method
+
+# Experiment
+
+Style/AccessModifierDeclarations:
+  EnforcedStyle: inline
+
+Style/DocumentDynamicEvalDefinition:
+  Enabled: false
+
+# Temporary
+Lint/ShadowingOuterLocalVariable:
+  Enabled: false # See https://github.com/rubocop-hq/rubocop/issues/9080
